@@ -1,4 +1,0 @@
-framework module UDI {
-  header "UDI-Swift.h"
-  requires objc
-}
