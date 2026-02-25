@@ -12,20 +12,20 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "UDICollectorSDK",
-            targets: ["UDICollectorBinaryRemote"]
+            targets: ["UDICollectorBinaryLocal"]
         )
     ],
     targets: [
-        .binaryTarget(
-            name: "UDICollectorBinaryRemote",
-            url: "https://artifactory-mars.cd.genesaas.io/artifactory/device-collector-releases/com/udicollector/ios-collector/1.2.1/ios-collector-1.2.1-ios-lib.zip", // Replace with actual URL during build
-            checksum: "e7aeca45b7faf21cf205400d8d57207e4f0091d77ad05352cf259b0a2c0f8e9b" // Replace with actual checksum during build
-        )
+//        .binaryTarget(
+//            name: "UDICollectorBinaryRemote",
+//            url: "https://artifactory-mars.cd.genesaas.io/artifactory/device-collector-releases/com/udicollector/ios-collector/1.2.1/ios-collector-1.2.1-ios-lib.zip", // Replace with actual URL during build
+//            checksum: "e7aeca45b7faf21cf205400d8d57207e4f0091d77ad05352cf259b0a2c0f8e9b" // Replace with actual checksum during build
+//        )
         // ,
-        // .binaryTarget(
-        //     name: "UDICollectorBinaryLocal",
-        //     path: "../sc-collector-sdk/target/frameworks/XCFramework/UDICollector.xcframework"
-        // )
+         .binaryTarget(
+             name: "UDICollectorBinaryLocal",
+             path: "../Frameworks/ios-collector-ios-lib.zip"
+         )
     ],
     swiftLanguageModes: [.v5]
 )
