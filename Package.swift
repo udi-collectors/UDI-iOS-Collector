@@ -24,7 +24,7 @@ let package = Package(
         // ,
          .binaryTarget(
              name: "UDICollectorBinaryLocal",
-             url: "https://github.com/udi-collectors/UDI-iOS-Collector.git/releases/download/1.0.0/ios-collector-ios-lib.zip",
+             url: "https://github.com/udi-collectors/UDI-iOS-Collector/releases/download/v1.2.1/ios-collector-ios-lib.zip",
              checksum: "e653b50e7487fb0459c832235ea9ce23f325fb151ba975e2a1e1416d2059a464"
          )
     ],
