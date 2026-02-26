@@ -1,4 +1,4 @@
-// swift-tools-version: 5.9
+// swift-tools-version: 6.2
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -24,7 +24,7 @@ let package = Package(
         // ,
          .binaryTarget(
              name: "UDICollectorSDK",
-             url: "https://github.com/udi-collectors/UDI-iOS-Collector/releases/download/1.2.3/ios-collector-ios-lib.zip",
+             url: "https://github.com/udi-collectors/UDI-iOS-Collector/releases/download/1.2.4/ios-collector-ios-lib.zip",
              checksum: "e653b50e7487fb0459c832235ea9ce23f325fb151ba975e2a1e1416d2059a464"
          )
     ],
